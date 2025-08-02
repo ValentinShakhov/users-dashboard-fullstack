@@ -1,0 +1,25 @@
+<div>
+  <h3>Gebruiker bewerken</h3>
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Naam</mat-label>
+      <input matInput formControlName="name" />
+      <mat-error *ngIf="name?.hasError('required')">Naam is verplicht</mat-error>
+      <mat-error *ngIf="name?.hasError('minlength')">Minimaal 2 tekens</mat-error>
+      <mat-error *ngIf="name?.hasError('maxlength')">Maximaal 150 tekens</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>E-mail</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="email?.hasError('required')">E-mail is verplicht</mat-error>
+      <mat-error *ngIf="email?.hasError('email')">Ongeldig e-mailadres</mat-error>
+      <mat-error *ngIf="name?.hasError('maxlength')">Maximaal 150 tekens</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">
+      Opslaan
+    </button>
+  </form>
+</div>

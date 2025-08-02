@@ -1,0 +1,8 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.snackbar {
+  margin-top: 50px;
+  --mat-snack-bar-supporting-text-size: 2rem;
+  --mat-snack-bar-supporting-text-weight: 300;
+}

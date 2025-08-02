@@ -1,0 +1,5 @@
+/frontend/dist
+/frontend/.angular
+.idea
+/backend/user-service/.gradle
+/backend/user-service/build
