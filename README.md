@@ -1,12 +1,12 @@
-## Description
+## Beschrijving
 
-User management dashboard with frontend (Angular) and backend (Spring boot)
+Dashboard voor gebruikersbeheer met frontend (Angular) en backend (Spring boot)
 
-## Instructions
+## Instructies
 Vereisten: [Docker engine](https://docs.docker.com/engine/install/)
 
-Run with
+Uitvoeren:
 
 `docker-compose up`
 
-Access: http://localhost
+Toegang: http://localhost
